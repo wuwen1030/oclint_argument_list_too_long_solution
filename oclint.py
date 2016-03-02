@@ -35,7 +35,7 @@ def split_json(all_json_objects):
 
     for i in range(sub_file_count):
         start = i*maxCountPerFile
-        end = min((i+1)*maxCountPerFile, total_count - 1)
+        end = min((i+1)*maxCountPerFile, total_count)
         sub_json_objects = all_json_objects[start:end]
         file_name = 'compile_commands%02d.json' %(i+1)
         sub_files.append(file_name)
