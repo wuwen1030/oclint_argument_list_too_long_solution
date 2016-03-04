@@ -83,7 +83,7 @@ def combine_outputs(output_files):
     base_tree = ET.ElementTree(file=output_files[0])
     base_root = base_tree.getroot()
 
-    left_files = output_files[1:len(output_files)-1]
+    left_files = output_files[1:len(output_files)]
     for left_file in left_files:
         tree = ET.ElementTree(file=left_file)
         root = tree.getroot()
